@@ -26,10 +26,15 @@ CHAT_ID = "7168878123"
 CHECK_INTERVAL = 300  # 5 minuten in seconden
 
 # Welke assets monitoren
-CRYPTO = ["BTC-USD", "ETH-USD", "SOL-USD"]
-STOCKS = ["AAPL", "TSLA", "NVDA", "AMZN"]
+CRYPTO  = ["BTC-USD", "ETH-USD", "SOL-USD"]
+STOCKS  = ["AAPL", "TSLA", "NVDA", "AMZN"]
+FUTURES = [
+    "ES=F",   # S&P 500 Futures
+    "NQ=F",   # Nasdaq 100 Futures
+    "YM=F",   # Dow Jones Futures
+]
 
-ALL_ASSETS = CRYPTO + STOCKS
+ALL_ASSETS = CRYPTO + STOCKS + FUTURES
 # ─────────────────────────────────────────────────────────────────────────────
 
 bot = Bot(token=TOKEN)
